@@ -1,0 +1,12 @@
+import math
+
+def qq(x1,x2,y1,y2) :
+    #ыыыыыыыыыыыыыыыыыыыыыыыыыыыы
+    dis=math.sqrt((x1-x2)**2+(y1-y2)**2)
+    return dis
+
+xx,yy = map(float, input("Введите значение для первой точки x,y: ").split())
+yx, xy = map(float, input("Введите значение для второй точки x,y: ").split())
+q=qq(xx,yx,yy,xy)
+
+print(f"растояние между точками( {xx},{yy}),({yx},{xy}) равна {q:.2f} cм")
